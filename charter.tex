@@ -77,6 +77,7 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 6      & Se completa hasta la sección 12 inclusive                 & 16 de noviembre de 2022 \\ \hline
 7      & Se aplican las correcciones de la tercer entrega
 & 22 de noviembre de 2022 \\ \hline
+8      & Se finaliza el documento completando hasta la sección 15 inclusive & 24 de noviembre de 2022 \\ \hline
 
 \end{tabularx}
 \end{table}
@@ -708,30 +709,46 @@ Descripción &
 
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
-
-\begin{consigna}{red}
-a) Identificación de los riesgos (al menos cinco) y estimación de sus consecuencias:
  
-Riesgo 1: detallar el riesgo (riesgo es algo que si ocurre altera los planes previstos de forma negativa)
+Riesgo 1: no contar los materiales a tiempo para el prototipo en la huerta.
 \begin{itemize}
-	\item Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de severidad (S).
-	\item Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de (O). 
+	\item Severidad (S): 8.
+	Esto va a demorar las pruebas de software y podría generar retrasos en todas las etapas.
+	\item Probabilidad de ocurrencia (O): 5.
+	Hay una probabilidad intermedia de no poder comprar todos los materiales a tiempo. 
 \end{itemize}   
 
-Riesgo 2:
+Riesgo 2: no contar con el presupuesto asignado del proyecto.
 \begin{itemize}
-	\item Severidad (S): 
-	\item Ocurrencia (O):
+	\item Severidad (S): 10.
+	Si esto sucede se para todo el proyecto.
+	\item Ocurrencia (O): 3.
+	Según lo acordado con la Universidad esto es poco probable.
 \end{itemize}
 
-Riesgo 3:
+Riesgo 3: no contar con buena señal de internet en la huerta.
 \begin{itemize}
-	\item Severidad (S): 
-	\item Ocurrencia (O):
+	\item Severidad (S): 5.
+	En caso de que no se cuente con buena señal de internet no se van a poder enviar las métricas al servidor.
+	\item Ocurrencia (O): 2.
+	Según lo acordado con la Universidad esto es poco probable.
 \end{itemize}
 
+Riesgo 4: no contar con la infraestructura de electricidad y agua en la huerta.
+\begin{itemize}
+	\item Severidad (S): 10.
+	Esto haría que el proyecto en sí no tenga sentido porque no se podría cumplir el objetivo del cuidado de la huerta.
+	\item Ocurrencia (O): 1.
+	Según lo acordado con la Universidad esto no es probable.
+\end{itemize}
+
+Riesgo 5: No alcanzar los conocimientos necesarios para el desarrollo en la placa, el backend y el frontend.
+\begin{itemize}
+	\item Severidad (S): 8.
+	En caso no tener un buen conocimiento para el desarrollo el proyecto va a ser inestable, lo que podría generar demoras en las entregas y problemas con la liquidación presupuesto.
+	\item Ocurrencia (O): 4.
+	Se espera cubrir todo lo necesario en la especialización más cursos extras.
+\end{itemize}
 
 b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 
@@ -741,70 +758,194 @@ b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
+      No contar los materiales a tiempo para el prototipo en la huerta &   8&   5&     40&    8&    2& 16     \\ \hline
+      No contar con el presupuesto asignado del proyecto &   10&   3&     30&   10 &   2 & 20     \\ \hline
+      No contar con buena señal de internet en la huerta &   5&   2&     10&   - &  -  & -     \\ \hline
+      No contar con la infraestructura de electricidad y agua en la huerta &  10 &   1&     10&    -&  -  & -     \\ \hline
+      No alcanzar los conocimientos necesarios para el desarrollo en la placa, el backend y el frontend &  7 &  3 & 21 &   - &   - &  -    \\ \hline
 \end{tabularx}%
 \end{table}
 
 Criterio adoptado: 
-Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a...
+Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a 25
 
 Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
 
 c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
  
-Riesgo 1: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-  Nueva asignación de S y O, con su respectiva justificación:
-  - Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de severidad (S).
-  - Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de (O).
-
-Riesgo 2: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
- 
-Riesgo 3: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-
-\end{consigna}
-
+Riesgo 1: se va a planificar la compra de materiales para la segunda semana de diciembre y se buscará un mínimo de 3 locales diferentes para tener varias opciones a la hora de realizar las compras.
+\begin{itemize}
+	\item Severidad (S): 8. Se mantiene el mismo criterio.
+	\item Probabilidad de ocurrencia (O): 2. Los materiales deberían que ser fáciles de conseguir en diferentes locales.
+\end{itemize}
+Riesgo 2: con la planificación anterior se va a generar una reunión con la Universidad para acordar las fechas de liquidación del presupuesto, de esa forma se podrá acordar su uso a tiempo.
+\begin{itemize}
+	\item Severidad (S): 10. Se mantiene el mismo criterio.
+	\item Probabilidad de ocurrencia (O): 2. Desde la Universidad debería haber buena predisposición para avanzar si se cuenta con un plan detallado.
+\end{itemize}
 
 \section{14. Gestión de la calidad}
 \label{sec:calidad}
 
-\begin{consigna}{red}
-Para cada uno de los requerimientos del proyecto indique:
-\begin{itemize} 
-\item Req \#1: copiar acá el requerimiento.
+Listado de requerimientos con sus verificaciones y validaciones:
 
 \begin{itemize}
-	\item Verificación para confirmar si se cumplió con lo requerido antes de mostrar el sistema al cliente. Detallar 
-	\item Validación con el cliente para confirmar que está de acuerdo en que se cumplió con lo requerido. Detallar  
+\item Requerimientos del dispositivo.
+	\begin{itemize}
+	\item Req \#1.1: debe tener un código interno para ser identificado unívocamente en el software de control.
+		\begin{itemize}
+		\item Verificación: se comprobará que el programa de la placa genere un código de forma única para un dispositivo.
+		\item Validación: se realizarán pruebas en al menos dos placas para asegurarse que el código que llega al backend es diferente en cada caso.\\
+		\end{itemize}
+		
+	\item Req \#1.2: debe contar con una placa ESP32 más dos sensores de humedad (uno de ambiente y otro de suelo).
+		\begin{itemize}
+		\item Verificación: se comprobará que cada componente sea el correcto verificando sus funciones.
+		\item Validación: se realizarán pruebas en una placa para validar que las mediciones de cada sensor sean las correctas.\\
+		\end{itemize}
+		
+	\item Req \#1.3: la placa ESP32 debe usar los sensores para medir los porcentajes correspondientes de las plantas de su sector.
+		\begin{itemize}
+		\item Verificación: se comprobará el correcto funcionamiento de cada sensor sobre la huerta.
+		\item Validación: se realizarán pruebas para validar que las mediciones aumentan a medida que se agrega agua en la huerta.\\
+		\end{itemize}
+		 
+	\item Req \#1.4: debe centralizar las métricas obtenidas y contar con Wi-Fi para trasmitirlas a un servidor.
+		\begin{itemize}
+		\item Verificación: se comprobará que la placa tenga la programación para tomar las métricas y transmitirlas vía Wi-Fi.
+		\item Validación: se realizarán pruebas en al menos dos placas para validar que las métricas lleguen correctamente al servidor.\\
+		\end{itemize}
+		 
+	\item Req \#1.5: tiene que poder activar la apertura o cierre de una válvula de agua usando un comando interno.
+		\begin{itemize}
+		\item Verificación: se comprobará que la placa tiene la programación suficiente para accionar la apertura o cierre de la válvula.
+		\item Validación: se realizarán pruebas en una placa para corroborar si efectivamente esta puede abrir y cerrar la válvula.\\
+		\end{itemize}
+		
+	\end{itemize}
+	
+\item Requerimientos de integración del backend del software.
+	\begin{itemize}
+	\item Req \#2.1: debe contar con un endpoint rest API para consultar las mediciones de un dispositivo.
+		\begin{itemize}
+		\item Verificación: se comprobará que el backend tiene la programación para recibir las mediciones de un dispositivo vía rest API.
+		\item Validación: se realizarán pruebas desde el backend para corroborar que todas las mediciones de un dispositivo llegan correctamente.\\
+		\end{itemize}
+		
+	\item Req \#2.2: debe contar con un endpoint rest API para solicitar a un dispositivo la apertura de la válvula de agua durante 30 segundos.
+		\begin{itemize}
+		\item Verificación: se comprobará que el backend tiene la programación para enviar un mensaje de apertura o cierre de la válvula a un dispositivo.
+		\item Validación: se realizarán pruebas para validar que el mensaje llega y que el dispositivo lo opera correctamente.\\
+		\end{itemize}
+		
+	\end{itemize}
+
+\item Requerimientos del sistema para los usuarios.
+	\begin{itemize}
+	\item Req \#3.1: debe permitir a un usuario loguearse al sistema usando su mail y constraseña.
+		\begin{itemize}
+		\item Verificación: se comprobará que exista un flujo de programación que permita a un usuario loguearse.
+		\item Validación: se realizarán pruebas de logueo con al menos 2 usuarios.\\
+		\end{itemize}
+		
+	\item Req \#3.2: debe permitir a un usuario desloguearse del sistema.
+		\begin{itemize}
+		\item Verificación: se comprobará que exista un flujo de programación que permita a un usuario desloguearse.
+		\item Validación: se realizarán pruebas de deslogueo con al menos 2 usuarios.\\
+		\end{itemize}
+		
+	\item Req \#3.3: debe permitir a un usuario recuperar y cambiar su contraseña.
+		\begin{itemize}
+		\item Verificación: se comprobará que exista un flujo de programación que permita a un usuario gestionar una nueva contraseña.
+		\item Validación: se realizarán pruebas al menos 3 usuarios para cambiar sus contraseñas efectivamente.\\
+		\end{itemize}
+		
+	\item Req \#3.4: debe tener una sección de visualización y modificación de los datos de perfil del usuario logueado.
+		\begin{itemize}
+		\item Verificación: se comprobará que exista un flujo de programación que permita a un usuario acceder a su perfil.
+		\item Validación: se realizarán pruebas con al menos 2 usuarios para validar que todos puedan acceder correctamente a su perfil.\\
+		\end{itemize}
+		
+	\item Req \#3.5: debe contemplar permisos para cada rol del sistema.
+		\begin{itemize}
+		\item Verificación: se comprobará que existe un sistema de permisos tanto en el backend como en el frontend para cada tipo de usuario.
+		\item Validación: se realizarán pruebas con usuarios de todos los roles del sistema para validar que cada uno pueda acceder y tener los permisos correspondientes en cada vista del frontend.\\
+		\end{itemize}
+		
+	\item Req \#3.6: debe tener una sección para ver, modificar y eliminar huertas del sistema.
+		\begin{itemize}
+		\item Verificación: se comprobará que existe una vista en el frontend para modificar y eliminar huertas.
+		\item Validación: se realizarán pruebas sobre la vista para modificar al menos 3 huertas y luego proceder con su correcta eliminación del sistema.\\
+		\end{itemize}
+		
+	\item Req \#3.7: debe tener una sección para ver, modificar y eliminar usuarios del sistema.
+		\begin{itemize}
+		\item Verificación: se comprobará que existe una vista en el frontend para modificar y eliminar usuarios.
+		\item Validación: se realizarán pruebas sobre la vista para modificar al menos 3 usuarios y luego proceder con su correcta eliminación del sistema.\\
+		\end{itemize}
+		
+	\item Req \#3.8: debe tener una sección para administrar huertas vinculando el código de un dispositivo por sector.
+		\begin{itemize}
+		\item Verificación: se comprobará que existe un flujo en el sistema donde se puede vincular un dispositivo  a un sector de una huerta.
+		\item Validación: se realizarán pruebas para vincular al menos 4 dispositivos en una huerta.\\
+		\end{itemize}
+		
+	\item Req \#3.9: debe tener una sección para administrar los porcentajes de aceptación de humedad por sector.
+		\begin{itemize}
+		\item Verificación: se comprobará que existe una vista donde se pueden administrar los porcentajes.
+		\item Validación: se realizarán pruebas para ingresar diferentes porcentajes de aceptación en al menos 3 sectores de una huerta.\\
+		\end{itemize}
+		
+	\item Req \#3.10: debe tener una sección para visualizar las mediciones de un dispositivo por sector.
+		\begin{itemize}
+		\item Verificación: se comprobará que existe una vista donde se puedan ver las métricas de un sector en particular.
+		\item Validación: se realizarán pruebas para validar que todas las métricas se visualicen correctamente.\\
+		\end{itemize}
+		
+	\item Req \#3.11: debe tener una sección para ver, modificar y eliminar usuarios con rol visitante para una huertas.
+		\begin{itemize}
+		\item Verificación: se comprobará que existe una vista en el frontend para modificar y eliminar usuarios visitantes en una huerta.
+		\item Validación:se realizarán pruebas sobre la vista para modificar al menos 3 usuarios con rol visitante y luego proceder con su correcta eliminación de la huerta.\\
+		\end{itemize}
+		
+	\item Req \#3.12: debe tener una sección para ver, modificar y eliminar roles del sistema.
+		\begin{itemize}
+		\item Verificación: se comprobará que existe una vista en el frontend para modificar y eliminar los roles del sistema.
+		\item Validación:se realizarán pruebas sobre la vista para modificar al menos 3 roles y luego proceder con su correcta eliminación del sistema.\\
+		\end{itemize}
+		
+	\item Req \#3.13: debe tener una sección para asociar un rol a un usuario nuevo.
+		\begin{itemize}
+		\item Verificación: se comprobará que existe un flujo en el cual se pueda agregar un rol a un usuario.
+		\item Validación: se realizarán pruebas para agregar roles a al menos 3 usuarios diferentes.\\
+		\end{itemize}
+		
+	\item Req \#3.14: debe permitir que un usuario (con rol responsable) solicite su alta en el sistema usando mail y password.
+		\begin{itemize}
+		\item Verificación: se comprobará que existe un flujo en el cual un usuario con rol responsable puede solicitar su creación en el sistema.
+		\item Validación: se realizarán pruebas para realizar dicha solicitud de forma exitosa con al menos 3 usuarios con rol responsable.
+		\end{itemize}
+		
 \end{itemize}
-
 \end{itemize}
-
-Tener en cuenta que en este contexto se pueden mencionar simulaciones, cálculos, revisión de hojas de datos, consulta con expertos, mediciones, etc.  Las acciones de verificación suelen considerar al entregable como ``caja blanca'', es decir se conoce en profundidad su funcionamiento interno.  En cambio, las acciones de validación suelen considerar al entregable como ``caja negra'', es decir, que no se conocen los detalles de su funcionamiento interno.
-
-\end{consigna}
 
 \section{15. Procesos de cierre}    
 \label{sec:cierre}
 
-\begin{consigna}{red}
-Establecer las pautas de trabajo para realizar una reunión final de evaluación del proyecto, tal que contemple las siguientes actividades:
+Al finalizar el proyecto se seguirán los siguientes pasos:
 
 \begin{itemize}
-	\item Pautas de trabajo que se seguirán para analizar si se respetó el Plan de Proyecto original:
-	 - Indicar quién se ocupará de hacer esto y cuál será el procedimiento a aplicar. 
-	\item Identificación de las técnicas y procedimientos útiles e inútiles que se emplearon, y los problemas que surgieron y cómo se solucionaron:
-	 - Indicar quién se ocupará de hacer esto y cuál será el procedimiento para dejar registro.
-	\item Indicar quién organizará el acto de agradecimiento a todos los interesados, y en especial al equipo de trabajo y colaboradores:
-	  - Indicar esto y quién financiará los gastos correspondientes.
+	\item Se realizará un informe que tendrá contemplado:
+	\begin{itemize}
+		\item Una comparación entre los tiempos y presupuesto estimado contra lo real.
+		\item Un análisis sobre las tecnologías y herramientas que se tuvieron que agregar y descartar durante el desarrollo del proyecto.
+		\item Un análisis sobre el resultado técnico final.
+		\item Un detalle sobre la viabilidad que hubo a la hora de montar la huerta y administrar los valores obtenidos de la misma.
+	\end{itemize}
+	\item Con el informe se tendrá una reunión con la directora de la carrera de la Licenciatura en Sistemas para analizar los resultados obtenidos.
+	\item Posteriormente se creará una comunicación para cada involucrado en el proyecto para compartir los resultados y dar agradecimientos.
+	\item Finalmente se creará una comunicación a alto nivel para compartir la información del proyecto con la comunidad de la Universidad Nacional de Lanús.
 \end{itemize}
-
-\end{consigna}
 
 
 \end{document}
