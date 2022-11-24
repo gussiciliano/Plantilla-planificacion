@@ -708,30 +708,46 @@ Descripción &
 
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
-
-\begin{consigna}{red}
-a) Identificación de los riesgos (al menos cinco) y estimación de sus consecuencias:
  
-Riesgo 1: detallar el riesgo (riesgo es algo que si ocurre altera los planes previstos de forma negativa)
+Riesgo 1: no contar los materiales a tiempo para el prototipo en la huerta.
 \begin{itemize}
-	\item Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de severidad (S).
-	\item Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de (O). 
+	\item Severidad (S): 8.
+	Esto va a demorar las pruebas de software y podría generar retrasos en todas las etapas.
+	\item Probabilidad de ocurrencia (O): 5.
+	Hay una probabilidad intermedia de no poder comprar todos los materiales a tiempo. 
 \end{itemize}   
 
-Riesgo 2:
+Riesgo 2: no contar con el presupuesto asignado del proyecto.
 \begin{itemize}
-	\item Severidad (S): 
-	\item Ocurrencia (O):
+	\item Severidad (S): 10.
+	Si esto sucede se para todo el proyecto.
+	\item Ocurrencia (O): 3.
+	Según lo acordado con la Universidad esto es poco probable.
 \end{itemize}
 
-Riesgo 3:
+Riesgo 3: no contar con buena señal de internet en la huerta.
 \begin{itemize}
-	\item Severidad (S): 
-	\item Ocurrencia (O):
+	\item Severidad (S): 5.
+	En caso de que no se cuente con buena señal de internet no se van a poder enviar las métricas al servidor.
+	\item Ocurrencia (O): 2.
+	Según lo acordado con la Universidad esto es poco probable.
 \end{itemize}
 
+Riesgo 4: no contar con la infraestructura de electricidad y agua en la huerta.
+\begin{itemize}
+	\item Severidad (S): 10.
+	Esto haría que el proyecto en si no tenga sentido porque no se podría cumplir el objetivo del cuidado de la huerta.
+	\item Ocurrencia (O): 1.
+	Según lo acordado con la Universidad esto no es probable.
+\end{itemize}
+
+Riesgo 5: No alcanzar los conocimientos necesarios para el desarrollo en la placa, el backend y el frontend.
+\begin{itemize}
+	\item Severidad (S): 8.
+	En caso no tener un buen conocimiento para el desarrollo el proyecto va a ser inestable, lo que podría generar demoras en las entregas y problemas con la liquidación presupuesto.
+	\item Ocurrencia (O): 4.
+	Se espera cubrir todo lo necesario en la especialización más cursos extras.
+\end{itemize}
 
 b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 
@@ -741,34 +757,31 @@ b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
+      No contar los materiales a tiempo para el prototipo en la huerta &   8&   5&     40&    &    &      \\ \hline
+      No contar con el presupuesto asignado del proyecto &   10&   3&     30&    &    &      \\ \hline
+      No contar con buena señal de internet en la huerta &   5&   2&     10&    &    &      \\ \hline
+      No contar con la infraestructura de electricidad y agua en la huerta &  10 &   1&     10&    &    &      \\ \hline
+      No alcanzar los conocimientos necesarios para el desarrollo en la placa, el backend y el frontend &  7 &  3 & 21 &    &    &      \\ \hline
 \end{tabularx}%
 \end{table}
 
 Criterio adoptado: 
-Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a...
+Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a 25
 
 Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
 
 c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
  
-Riesgo 1: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-  Nueva asignación de S y O, con su respectiva justificación:
-  - Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de severidad (S).
-  - Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de (O).
-
-Riesgo 2: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
- 
-Riesgo 3: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-
-\end{consigna}
-
+Riesgo 1: se va a planificar la compra de materiales para la segunda semana de diciembre y se buscará un mínimo de 3 locales diferentes para tener varias opciones a la hora de realizar las compras.
+\begin{itemize}
+	\item Severidad (S): 8. Se mantiene el mismo criterio.
+	\item Probabilidad de ocurrencia (O): 2. Los materiales deberían que ser fáciles de conseguir en diferentes locales.
+\end{itemize}
+Riesgo 2: con la planificación anterior se va a generar una reunión con la Universidad para acordar las fechas de liquidación del presupuesto, de esa forma se podrá acordar su uso a tiempo.
+\begin{itemize}
+	\item Severidad (S): 10. Se mantiene el mismo criterio.
+	\item Probabilidad de ocurrencia (O): 2. Desde la Universidad debería haber buena predisposición para avanzar si se cuenta con un plan detallado.
+\end{itemize}
 
 \section{14. Gestión de la calidad}
 \label{sec:calidad}
