@@ -794,32 +794,32 @@ Listado de requerimientos con sus verificaciones y validaciones:
 	\begin{itemize}
 	\item Req \#1.1: debe tener un código interno para ser identificado unívocamente en el software de control.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que el programa de la placa genere un código de forma única para un dispositivo.
+		\item Validación: se realizarán pruebas en al menos dos placas para asegurarse que el código que llega al backend es diferente en cada caso.\\
 		\end{itemize}
 		
 	\item Req \#1.2: debe contar con una placa ESP32 más dos sensores de humedad (uno de ambiente y otro de suelo).
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que cada componente sea el correcto verificando sus funciones.
+		\item Validación: se realizarán pruebas en una placa para validar que las mediciones de cada sensor sean las correctas.\\
 		\end{itemize}
 		
 	\item Req \#1.3: la placa ESP32 debe usar los sensores para medir los porcentajes correspondientes de las plantas de su sector.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará el correcto funcionamiento de cada sensor sobre la huerta.
+		\item Validación: se realizarán pruebas validar que las mediciones aumentan a medida que se agrega agua en la huerta.\\
 		\end{itemize}
 		 
 	\item Req \#1.4: debe centralizar las métricas obtenidas y contar con Wi-Fi para trasmitirlas a un servidor.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que la placa tenga la programación para tomar las métricas y transmitirlas vía Wi-Fi.
+		\item Validación: se realizarán pruebas en al menos dos placas para validar que las métricas lleguen correctamente al servidor.\\
 		\end{itemize}
 		 
 	\item Req \#1.5: tiene que poder activar la apertura o cierre de una válvula de agua usando un comando interno.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que la placa tiene la programación suficiente para accionar la apertura o cierre de la válvula.
+		\item Validación: se realizarán pruebas en una placa para corroborar que efectivamente se abre y cierra la válvula.\\
 		\end{itemize}
 		
 	\end{itemize}
@@ -828,14 +828,14 @@ Listado de requerimientos con sus verificaciones y validaciones:
 	\begin{itemize}
 	\item Req \#2.1: debe contar con un endpoint rest API para consultar las mediciones de un dispositivo.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que el backend tiene la programación para recibir las mediciones de un dispositivo vía rest API.
+		\item Validación: se realizarán pruebas desde el backend para corroborar que todas las mediciones de un dispositivo llegan correctamente.\\
 		\end{itemize}
 		
 	\item Req \#2.2: debe contar con un endpoint rest API para solicitar a un dispositivo la apertura de la válvula de agua durante 30 segundos.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que el backend tiene la programación para enviar un mensaje de apertura o cierre de la válvula a un dispositivo.
+		\item Validación: se realizarán pruebas para validar que el mensaje llegue y que el dispositivo lo opere correctamente.\\
 		\end{itemize}
 		
 	\end{itemize}
@@ -844,116 +844,90 @@ Listado de requerimientos con sus verificaciones y validaciones:
 	\begin{itemize}
 	\item Req \#3.1: debe permitir a un usuario loguearse al sistema usando su mail y constraseña.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que exista un flujo de programación que permita a un usuario loguearse.
+		\item Validación: se realizarán pruebas de logueo con al menos 2 usuarios.\\
 		\end{itemize}
 		
 	\item Req \#3.2: debe permitir a un usuario desloguearse del sistema.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que exista un flujo de programación que permita a un usuario desloguearse.
+		\item Validación: se realizarán pruebas de deslogueo con al menos 2 usuarios.\\
 		\end{itemize}
 		
 	\item Req \#3.3: debe permitir a un usuario recuperar y cambiar su contraseña.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que exista un flujo de programación que permita a un usuario gestionar una nueva contraseña.
+		\item Validación: se realizarán pruebas al menos 3 usuarios para cambiar sus contraseñas efectivamente.\\
 		\end{itemize}
 		
 	\item Req \#3.4: debe tener una sección de visualización y modificación de los datos de perfil del usuario logueado.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que exista un flujo de programación que permita a un usuario acceder a su perfil.
+		\item Validación: se realizarán pruebas con al menos 2 usuarios para validar que todos puedan acceder correctamente a su perfil.\\
 		\end{itemize}
 		
 	\item Req \#3.5: debe contemplar permisos para cada rol del sistema.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que existe un sistema de permisos tanto en el backend como en el frontend para cada tipo de usuario.
+		\item Validación: se realizarán pruebas con usuarios de todos los roles del sistema para validar que cada uno pueda acceder y tener los permisos correspondientes en cada vista del frontend.\\
 		\end{itemize}
 		
 	\item Req \#3.6: debe tener una sección para ver, modificar y eliminar huertas del sistema.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que existe una vista en el frontend para modificar y eliminar huertas.
+		\item Validación: se realizarán pruebas sobre la vista para modificar al menos 3 huertas y luego proceder con su correcta eliminación del sistema.\\
 		\end{itemize}
 		
 	\item Req \#3.7: debe tener una sección para ver, modificar y eliminar usuarios del sistema.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que existe una vista en el frontend para modificar y eliminar usuarios.
+		\item Validación: se realizarán pruebas sobre la vista para modificar al menos 3 usuarios y luego proceder con su correcta eliminación del sistema.\\
 		\end{itemize}
 		
 	\item Req \#3.8: debe tener una sección para administrar huertas vinculando el código de un dispositivo por sector.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que existe un flujo en el sistema donde se puede vincular un dispositivo  a un sector de una huerta.
+		\item Validación: se realizarán pruebas para vincular al menos 4 dispositivos en una huerta.\\
 		\end{itemize}
 		
 	\item Req \#3.9: debe tener una sección para administrar los porcentajes de aceptación de humedad por sector.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que existe una vista donde se pueden administrar los porcentajes.
+		\item Validación: se realizarán pruebas para ingresar diferentes porcentajes de aceptación en al menos 3 sectores de una huerta.\\
 		\end{itemize}
 		
 	\item Req \#3.10: debe tener una sección para visualizar las mediciones de un dispositivo por sector.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que existe una vista donde se puedan ver las métricas de un sector en particular.
+		\item Validación: se realizarán pruebas para validar que todas las métricas se visualicen correctamente.\\
 		\end{itemize}
 		
 	\item Req \#3.11: debe tener una sección para ver, modificar y eliminar usuarios con rol visitante para una huertas.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que existe una vista en el frontend para modificar y eliminar usuarios visitantes en una huerta.
+		\item Validación:se realizarán pruebas sobre la vista para modificar al menos 3 usuarios con rol visitante y luego proceder con su correcta eliminación del sistema.\\
 		\end{itemize}
 		
 	\item Req \#3.12: debe tener una sección para ver, modificar y eliminar roles del sistema.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que existe una vista en el frontend para modificar y eliminar los roles del sistema.
+		\item Validación:se realizarán pruebas sobre la vista para modificar al menos 3 roles y luego proceder con su correcta eliminación del sistema.\\
 		\end{itemize}
 		
 	\item Req \#3.13: debe tener una sección para asociar un rol a un usuario nuevo.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que existe un flujo en el cual se pueda agregar un rol a un usuario.
+		\item Validación: se realizarán pruebas para agregar roles a al menos 3 usuarios diferentes.\\
 		\end{itemize}
 		
 	\item Req \#3.14: debe permitir que un usuario (con rol responsable) solicite su alta en el sistema usando mail y password.
 		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
+		\item Verificación: se comprobará que existe un flujo en el cual un usuario con rol responsable puede solicitar su creación en el sistema.
+		\item Validación: se realizarán pruebas para realizar dicha solicitud de forma exitosa con al menos 3 usuarios con rol responsable.\\
 		\end{itemize}
 		
-\end{itemize}		
-		
-\item Requerimientos no funcionales.
-	\begin{itemize}
-	\item Req \#4.1: el sistema deberá tener un usuario administrador por defecto.
-		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\  
-		\end{itemize}
-		
-	\item Req \#4.2: cada dispositivo deberá instalarse en un sector correctamente delimitado de la huerta.
-		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
-		\end{itemize}
-		
-	\item Req \#4.3: la huerta va a contar con sectores con platas que tengan características de cuidado similares.\\
-		\begin{itemize}
-		\item Verificación: .
-		\item Validación: .\\
-		\end{itemize}
-		
-	\end{itemize}
 \end{itemize}
-
-Las acciones de verificación suelen considerar al entregable como ``caja blanca'', es decir se conoce en profundidad su funcionamiento interno.
-las acciones de validación suelen considerar al entregable como ``caja negra'', es decir, que no se conocen los detalles de su funcionamiento interno.
-
+\end{itemize}
 
 \section{15. Procesos de cierre}    
 \label{sec:cierre}
