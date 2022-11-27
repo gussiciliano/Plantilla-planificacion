@@ -70,14 +70,15 @@ codirector, % Uncomment to add a codirector to the title page
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
 1      & Se completa hasta la sección 5 inclusive                 & 2 de noviembre de 2022 \\ \hline
-2      & Se aplican las correcciones de la primer entrega                 & 6 de noviembre de 2022 \\ \hline
+2      & Se aplican las correcciones de la primera entrega                 & 6 de noviembre de 2022 \\ \hline
 3      & Se completa hasta la sección 9 inclusive                 & 9 de noviembre de 2022 \\ \hline
 4      & Se aplican las correcciones de la segunda entrega                 & 14 de noviembre de 2022 \\ \hline
 5      & Se agrega la información del director del trabajo                & 15 de noviembre de 2022 \\ \hline
 6      & Se completa hasta la sección 12 inclusive                 & 16 de noviembre de 2022 \\ \hline
-7      & Se aplican las correcciones de la tercer entrega
+7      & Se aplican las correcciones de la tercera entrega
 & 22 de noviembre de 2022 \\ \hline
 8      & Se finaliza el documento completando hasta la sección 15 inclusive & 24 de noviembre de 2022 \\ \hline
+9      & Se aplican las correcciones de la última entrega & 27 de noviembre de 2022 \\ \hline
 
 \end{tabularx}
 \end{table}
@@ -744,9 +745,9 @@ Riesgo 4: no contar con la infraestructura de electricidad y agua en la huerta.
 
 Riesgo 5: No alcanzar los conocimientos necesarios para el desarrollo en la placa, el backend y el frontend.
 \begin{itemize}
-	\item Severidad (S): 8.
+	\item Severidad (S): 7.
 	En caso no tener un buen conocimiento para el desarrollo el proyecto va a ser inestable, lo que podría generar demoras en las entregas y problemas con la liquidación presupuesto.
-	\item Ocurrencia (O): 4.
+	\item Ocurrencia (O): 3.
 	Se espera cubrir todo lo necesario en la especialización más cursos extras.
 \end{itemize}
 
@@ -767,21 +768,23 @@ Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
 \end{table}
 
 Criterio adoptado: 
-Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a 25
+Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a 25.
 
 Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
 
 c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
  
-Riesgo 1: se va a planificar la compra de materiales para la segunda semana de diciembre y se buscará un mínimo de 3 locales diferentes para tener varias opciones a la hora de realizar las compras.
+Riesgo 1: no contar los materiales a tiempo para el prototipo en la huerta.
 \begin{itemize}
-	\item Severidad (S): 8. Se mantiene el mismo criterio.
-	\item Probabilidad de ocurrencia (O): 2. Los materiales deberían que ser fáciles de conseguir en diferentes locales.
+	\item Plan de mitigación: se va a planificar la compra de materiales para la segunda semana de diciembre y se buscará un mínimo de 3 locales diferentes para tener varias opciones a la hora de realizar las compras.
+	\item Severidad (S*): 8. Se mantiene el mismo criterio.
+	\item Probabilidad de ocurrencia (O*): 2. Los materiales deberían que ser fáciles de conseguir en diferentes locales.
 \end{itemize}
-Riesgo 2: con la planificación anterior se va a generar una reunión con la Universidad para acordar las fechas de liquidación del presupuesto, de esa forma se podrá acordar su uso a tiempo.
+Riesgo 2: no contar con el presupuesto asignado del proyecto.
 \begin{itemize}
-	\item Severidad (S): 10. Se mantiene el mismo criterio.
-	\item Probabilidad de ocurrencia (O): 2. Desde la Universidad debería haber buena predisposición para avanzar si se cuenta con un plan detallado.
+	\item Plan de mitigación: con la planificación anterior se va a generar una reunión con la Universidad para acordar las fechas de liquidación del presupuesto, de esa forma se podrá acordar su uso a tiempo.
+	\item Severidad (S*): 10. Se mantiene el mismo criterio.
+	\item Probabilidad de ocurrencia (O*): 2. Desde la Universidad debería haber buena predisposición para avanzar si se cuenta con un plan detallado.
 \end{itemize}
 
 \section{14. Gestión de la calidad}
@@ -813,7 +816,7 @@ Listado de requerimientos con sus verificaciones y validaciones:
 	\item Req \#1.4: debe centralizar las métricas obtenidas y contar con Wi-Fi para trasmitirlas a un servidor.
 		\begin{itemize}
 		\item Verificación: se comprobará que la placa tenga la programación para tomar las métricas y transmitirlas vía Wi-Fi.
-		\item Validación: se realizarán pruebas en al menos dos placas para validar que las métricas lleguen correctamente al servidor.\\
+		\item Validación: se realizarán pruebas en al menos dos placas para validar que las métricas lleguen correctamente al servidor. Además se evaluará la calidad de señal de Wi-Fi con una medición de RSSI.\\
 		\end{itemize}
 		 
 	\item Req \#1.5: tiene que poder activar la apertura o cierre de una válvula de agua usando un comando interno.
@@ -944,7 +947,10 @@ Al finalizar el proyecto se seguirán los siguientes pasos:
 	\end{itemize}
 	\item Con el informe se tendrá una reunión con la directora de la carrera de la Licenciatura en Sistemas para analizar los resultados obtenidos.
 	\item Posteriormente se creará una comunicación para cada involucrado en el proyecto para compartir los resultados y dar agradecimientos.
-	\item Finalmente se creará una comunicación a alto nivel para compartir la información del proyecto con la comunidad de la Universidad Nacional de Lanús.
+	\item Por otro lado se creará una comunicación a alto nivel para la comunidad de la Universidad Nacional de Lanús.
+	\item Finalmente se realizará la defensa pública del proyecto. Esta se llevará a cabo de forma virtual y participarán los interesados, jurados y autoridades de la especialización. Al final de la presentación se agradecerá formalmente a todos aquellos que colaboraron durante el proyecto. El Acto de Cierre estará a cargo de la dirección de la carrera.	
+	
+	
 \end{itemize}
 
 
